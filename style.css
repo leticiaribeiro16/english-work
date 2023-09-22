@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: #1e1e1e;
+}
+.titulo-principal{
+  max-width: 480px;
+  text-align: center;
+  margin: 60px auto;
+  font-family: 'DotGothic16', sans-serif;
+  color: #d50000;
+}
+.titulo-principal:after{
+ content: '|';
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca .7s infinite;
+}
+
+.form-control{
+  background: #2c2c2c !important;
+  border: none !important;
+}
+input::placeholder {
+    color: #d50000 !important;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
